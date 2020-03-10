@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - metal
+  - Target
+  - Metal
+  - Big_Door
+  - Pistol
+  - ExcludeTeleport
+  - Ladder
+  - Sword
+  - Enemy
+  - Detachable
+  - TeleportIgnore
+  - Plekumat
+  - EnemyBody
+  - EnemyHead
+  - EnemyOthers
+  - Holster
+  - Drone
+  - Throwable
+  - Flow
+  - Meltable
+  - Glass
+  - Scientist
+  - LaserEnd
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Head
+  - Player
+  - Rifle
+  - Sword
+  - Enemy
+  - Spaceship
+  - Postprocessing
+  - Floor
+  - Wall
+  - DoorTrigger
+  - Hand
+  - Bullet
+  - Pistol
+  - BulletImpact
+  - Holster
+  - Cube
+  - FieldOfView
+  - Drone
+  - CollisionCheck
+  - Throwable
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
