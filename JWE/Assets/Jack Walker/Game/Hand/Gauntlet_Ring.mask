@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Gauntlet_Ring
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: _Forearm
+    m_Weight: 0
+  - m_Path: _Forearm/_arm
+    m_Weight: 0
+  - m_Path: _Forearm/_arm/_armor
+    m_Weight: 0
+  - m_Path: _Forearm/_arm/_armor/_blaster
+    m_Weight: 0
+  - m_Path: _Forearm/_arm/_armor/_blaster/_transform2
+    m_Weight: 0
+  - m_Path: _Forearm/_arm/_armor/_transform3
+    m_Weight: 0
+  - m_Path: _Forearm/_arm/_transform4
+    m_Weight: 0
+  - m_Path: _kontrol
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint3
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint3/_joint4
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint3/_joint4/_joint5
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint3/_joint4/_joint5/_joint6
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint7
+    m_Weight: 1
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint7/_joint8
+    m_Weight: 1
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint7/_joint8/_joint9
+    m_Weight: 1
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint7/_joint8/_joint9/_joint10
+    m_Weight: 1
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint11
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint11/_joint12
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint11/_joint12/_joint13
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint11/_joint12/_joint13/_joint14
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint15
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint15/_joint16
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint15/_joint16/_joint17
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint15/_joint16/_joint17/_joint18
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint22
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint22/_joint19
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint22/_joint19/_joint20
+    m_Weight: 0
+  - m_Path: _kontrol/_transform1/_joint1/_joint2/_joint22/_joint19/_joint20/_joint21
+    m_Weight: 0
+  - m_Path: _parca2
+    m_Weight: 0
+  - m_Path: persp1
+    m_Weight: 0

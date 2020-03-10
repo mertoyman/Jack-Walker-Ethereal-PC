@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 316ee1170b915b546ba979add4fb8df0
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: -8149027027892440202
+    second: Attack_Arm_1
+  - first:
+      74: -6298311200778924810
+    second: Attack_Rifle
+  - first:
+      74: 5221839051391140242
+    second: Attack_Arm_2
+  - first:
+      74: 3511923849462190185
+    second: Attack_Rifle_Bash
+  - first:
+      74: -6596541789731478518
+    second: "Attack_\u0421old_WP_1"
+  - first:
+      74: 2559648064678858965
+    second: "Attack_\u0421old_WP_2"
+  - first:
+      74: -5025842890986106669
+    second: Death_Rifle
+  - first:
+      74: 4531634655134101372
+    second: "Death_\u0421old_WP"
+  - first:
+      74: 7918163808584741603
+    second: GetHit_Rifle
+  - first:
+      74: -2084543570858490444
+    second: "GetHit_\u0421old_WP"
+  - first:
+      74: -5533903024747340832
+    second: Idle_1
+  - first:
+      74: 1245882690682072010
+    second: Idle_2
+  - first:
+      74: -3548273549459496330
+    second: Idle_3
+  - first:
+      74: 3046929311777625782
+    second: Idle_Crazy_Robot
+  - first:
+      74: -663753529754743939
+    second: "Idle_\u0421old_WP"
+  - first:
+      74: -963677172368922360
+    second: Reload_Rifle
+  - first:
+      74: -2449410585630518142
+    second: Run_IP
+  - first:
+      74: -5524683048099754066
+    second: Run_IP_Jump
+  - first:
+      74: -765912619033631986
+    second: Run_Rifle_IP
+  - first:
+      74: 3171443395182528159
+    second: Walk_IP
+  - first:
+      74: 1210061592109210987
+    second: Walk_Rifle_IP
+  - first:
+      74: -8100277991235416647
+    second: Idle_Rifle
+  - first:
+      74: -4815154591540883644
+    second: Idle_Rifle0
+  - first:
+      74: -4067572637558859831
+    second: Armature_Robot4|Idle_Rifle
+  - first:
+      74: 3429580800763252977
+    second: Armature_Robot4|Idle_Rifle0
+  - first:
+      74: -8604879308973115052
+    second: Armature_Robot4|Walk_Rifle_IP
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

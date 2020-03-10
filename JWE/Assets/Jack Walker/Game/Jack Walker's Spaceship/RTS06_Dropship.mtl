@@ -1,0 +1,47 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 05.08.2019 10:00:04
+
+newmtl RTS_06_Dropship
+	Ns 29.999998
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.847059 0.847059 0.847059
+	Kd 0.847059 0.847059 0.847059
+	Ks 0.720000 0.720000 0.720000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka RTS_06_desert.jpg
+	map_Kd RTS_06_desert.jpg
+	map_bump -bm 0.650000 Map__19_Normal_Bump.tga
+
+newmtl Pedestal
+	Ns 29.999998
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.847059 0.847059 0.847059
+	Kd 0.847059 0.847059 0.847059
+	Ks 0.720000 0.720000 0.720000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka pedestal_albedo.jpg
+	map_Kd pedestal_albedo.jpg
+	map_bump -bm 0.650000 Map__19_Normal_Bump.tga
+
+newmtl Fighters_Weapons
+	Ns 29.999998
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.847059 0.847059 0.847059
+	Kd 0.847059 0.847059 0.847059
+	Ks 0.720000 0.720000 0.720000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka Fighters-Weapons_albedo.jpg
+	map_Kd Fighters-Weapons_albedo.jpg
+	map_bump -bm 0.650000 Map__19_Normal_Bump.tga
