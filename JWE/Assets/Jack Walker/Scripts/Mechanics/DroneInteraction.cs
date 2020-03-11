@@ -1,6 +1,5 @@
 ﻿using VRTK;
 using UnityEngine;
-using System;
 
 public class DroneInteraction : MonoBehaviour
 {
@@ -21,13 +20,12 @@ public class DroneInteraction : MonoBehaviour
         {
             explosion.Play();
             Destroy(transform.gameObject, explosion.main.duration - 1);
-            grapple.PullBackGrapple();
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Gauntlet>() && !grapple.canMove)
+        if (!grapple.grappleThrown)
         {
             canExplode = true;
         }
