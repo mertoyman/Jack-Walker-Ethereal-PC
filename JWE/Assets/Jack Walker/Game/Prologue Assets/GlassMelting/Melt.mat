@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Melt
+  m_Shader: {fileID: -6465566751694194690, guid: d1cf1babb95548b49971f5dd48e23faf,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_5E1886BB: 30
+    - Vector1_8773E819: 0.06
+    - Vector1_FA5C1713: 0
+    - _MeltRatio: 0
+    m_Colors:
+    - Color_3B8D2AD2: {r: 1, g: 0.07135884, b: 0, a: 0}
+    - Color_BC417D4D: {r: 0.7398095, g: 0.8707481, b: 0.8962264, a: 0.11764706}
