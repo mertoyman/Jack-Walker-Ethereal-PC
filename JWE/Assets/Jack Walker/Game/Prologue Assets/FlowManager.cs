@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using VRTK;
 
 public class FlowManager : MonoBehaviour
@@ -22,6 +20,8 @@ public class FlowManager : MonoBehaviour
     }
     public void NextFlowLevel()
     {
+        if (flowPhase >= flowChart.Length)
+            return;
         if (flowPhase == 1)
         {
             leftHand.SetActive(true);
@@ -45,12 +45,11 @@ public class FlowManager : MonoBehaviour
     {
         if (flowPhase == 2 && pointer.isLive)
         {
-            gShoot.enabled = true;
             sword.SetActive(false);
             sword.SetActive(true);
             NextFlowLevel();
         }
-        if (flowPhase == 3 && sword.transform.parent)
+        else if (flowPhase == 3 && sword.transform.parent)
         {
             if (sword.transform.parent.gameObject.layer == LayerMask.NameToLayer("Player"))
             {

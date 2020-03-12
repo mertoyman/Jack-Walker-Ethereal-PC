@@ -34,13 +34,14 @@ public class Meltable : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         meltStarted = true;
-        while (meltMat.GetFloat("_MeltRatio") < 1)
+        while (meltMat.GetFloat("_MeltRatio") < 1.02f)
         {
             meltRatio = meltMat.GetFloat("_MeltRatio");
             meltMat.SetFloat("_MeltRatio",meltRatio+0.02f );
             yield return new WaitForEndOfFrame();
-
+            
         }
+
         flowManager.MeltedDone();
         Destroy(this.gameObject);
 

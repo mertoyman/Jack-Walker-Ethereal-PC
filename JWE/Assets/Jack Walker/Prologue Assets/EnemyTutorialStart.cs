@@ -12,7 +12,7 @@ public class EnemyTutorialStart : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Player") && flowManager.flowPhase == 5) 
+        if(other.gameObject.CompareTag("Player") && flowManager.flowPhase == 5) 
         {
             flowManager.NextFlowLevel();
             doorTrigger.SetActive(true);

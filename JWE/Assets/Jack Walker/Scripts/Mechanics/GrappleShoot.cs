@@ -8,7 +8,7 @@ public class GrappleShoot : MonoBehaviour
     [SerializeField] VRTK_ControllerEvents controllerEvents = null;
     [SerializeField] Gauntlet gauntlet;
     [SerializeField] Transform player = null;
-    [SerializeField] FlowManager flowManager;
+    //[SerializeField] FlowManager flowManager;
     [SerializeField] Vector3 initialGrapplePosition = new Vector3(-0.032f, -0.022f, -0.11f);
     
     [SerializeField] bool triggerPress;
@@ -35,7 +35,7 @@ public class GrappleShoot : MonoBehaviour
 
     private void Start()
     {
-        flowManager = FindObjectOfType<FlowManager>();
+        //flowManager = FindObjectOfType<FlowManager>();
         body = FindObjectOfType<VRTK_BodyPhysics>();
         jump = FindObjectOfType<Jump>();
         slowMotion = FindObjectOfType<SlowMotion>();
@@ -104,10 +104,10 @@ public class GrappleShoot : MonoBehaviour
         grabPress = true;
         triggerPress = false;
         isHit = false;
-        if (flowManager.flowPhase == 1)
-        {
-            flowManager.NextFlowLevel();
-        }
+        //if (flowManager.flowPhase == 1)
+        //{
+        //    flowManager.NextFlowLevel();
+        //}
     }
 
     private void TriggerPressed(object sender, ControllerInteractionEventArgs e)
@@ -161,10 +161,10 @@ public class GrappleShoot : MonoBehaviour
         grappleThrown = true;
         laserBeamScript.enabled = true;
         pointer.enabled = false;
-        if (flowManager.flowPhase == 4)
-        {
-            flowManager.NextFlowLevel();
-        }
+        //if (flowManager.flowPhase == 4)
+        //{
+        //    flowManager.NextFlowLevel();
+        //}
     }
 
     private void MoveToGrapple()
@@ -177,7 +177,7 @@ public class GrappleShoot : MonoBehaviour
         if (!grabPress)
         {
             pointer.enabled = false;
-            body.ToggleOnGround(false);
+            //body.ToggleOnGround(false);
             player.GetComponent<Rigidbody>().useGravity = false;
 
             var gauntletPosition = new Vector3(gauntlet.transform.position.x - transform.position.x + player.position.x,
@@ -191,7 +191,7 @@ public class GrappleShoot : MonoBehaviour
         else
         {
             player.GetComponent<Rigidbody>().isKinematic = false;
-            body.ToggleOnGround(true);
+            //body.ToggleOnGround(true);
             YPressed = false;
             EnableMovementScript(true);
 
@@ -201,7 +201,7 @@ public class GrappleShoot : MonoBehaviour
         {
             canMove = false;
             YPressed = false;
-            body.ToggleOnGround(true);
+            //body.ToggleOnGround(true);
             jump.enabled = false;
             player.GetComponent<Rigidbody>().isKinematic = true;
             gauntlet.transform.parent = transform;

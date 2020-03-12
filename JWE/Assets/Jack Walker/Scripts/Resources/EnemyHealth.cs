@@ -12,7 +12,7 @@ public class EnemyHealth : Health
    
     void Start()
     {
-        animator = this.GetComponentInChildren<Animator>();
+        animator = this.GetComponent<Animator>();
         fighter = GetComponent<Fighter>();
         npcController = GetComponent<AIController>();
     }

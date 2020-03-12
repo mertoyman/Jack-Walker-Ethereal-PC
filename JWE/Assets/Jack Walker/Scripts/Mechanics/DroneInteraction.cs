@@ -14,18 +14,24 @@ public class DroneInteraction : MonoBehaviour
         leftController.GripPressed += GripPressed; 
     }
 
+    private void OnDisable()
+    {
+        leftController.GripPressed -= GripPressed;
+    }
+
     private void GripPressed(object sender, ControllerInteractionEventArgs e)
     {
         if (canExplode)
         {
             explosion.Play();
             Destroy(transform.gameObject, explosion.main.duration - 1);
+            canExplode = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!grapple.grappleThrown)
+        if (grapple.grappleThrown && other.CompareTag("Hand"))
         {
             canExplode = true;
         }

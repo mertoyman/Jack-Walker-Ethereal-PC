@@ -15,15 +15,20 @@ public class FlowSlowMo : MonoBehaviour
     {
         if (gameStop)
         {
+            gameStop = false;
             _flowManager.NextFlowLevel();
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player") && !gameStop)
         {
-            Time.timeScale = 0.1f;
-            gameStop = true;
+            if (_flowManager.flowPhase == 6)
+            {
+                _flowManager.NextFlowLevel();
+                Time.timeScale = 0.05f;
+                gameStop = true;
+            }
         }
     }
 

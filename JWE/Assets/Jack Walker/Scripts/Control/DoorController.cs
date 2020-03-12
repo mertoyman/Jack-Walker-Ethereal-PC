@@ -10,7 +10,7 @@ public class DoorController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log(other.tag);
+            
             if (animator.GetBool("Open") == false)
             {
                 animator.SetBool("Open", true);

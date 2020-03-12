@@ -11,7 +11,7 @@ namespace FPS.Combat
         NPCWeaponShoot npcWeapon;
 
         [SerializeField]
-        private float timeBetweenAttacks = 1f;
+        private float timeBetweenAttacks = 2f;
         private float timeSinceLastAttack = Mathf.Infinity;
         
         FieldOfView fov = null;
