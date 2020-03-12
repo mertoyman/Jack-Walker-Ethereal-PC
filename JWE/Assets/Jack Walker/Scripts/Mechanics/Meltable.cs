@@ -6,6 +6,13 @@ public class Meltable : MonoBehaviour
 {
 
     [SerializeField]FlowManager flowManager;
+    Material meltMat;
+    bool meltStarted = false;
+    float meltRatio;
+    private void Start()
+    {
+        meltMat = GetComponent<Renderer>().material;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("LaserEnd"))
@@ -16,7 +23,7 @@ public class Meltable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("LaserEnd"))
+        if (other.gameObject.CompareTag("LaserEnd") && !meltStarted)
         {
             StopCoroutine("Melt");
         }
@@ -25,7 +32,15 @@ public class Meltable : MonoBehaviour
 
     private IEnumerator Melt()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
+        meltStarted = true;
+        while (meltMat.GetFloat("_MeltRatio") < 1)
+        {
+            meltRatio = meltMat.GetFloat("_MeltRatio");
+            meltMat.SetFloat("_MeltRatio",meltRatio+0.02f );
+            yield return new WaitForEndOfFrame();
+
+        }
         flowManager.MeltedDone();
         Destroy(this.gameObject);
 

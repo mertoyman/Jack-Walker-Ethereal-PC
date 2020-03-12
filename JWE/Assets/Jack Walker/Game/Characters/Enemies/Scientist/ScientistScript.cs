@@ -7,6 +7,7 @@ public class ScientistScript : MonoBehaviour
     [SerializeField] bool isLooking = false;
     [SerializeField] FlowManager flowManager;
     [SerializeField] float rotationSpeed;
+    [SerializeField] Transform player;
     Animator anim;
     bool noticed = false;
     public bool turn = false;
@@ -32,8 +33,8 @@ public class ScientistScript : MonoBehaviour
                 anim.SetInteger("State", 0);
             }
         }
-        
-        
+
+
     }
 
     void NoticeUs()
@@ -42,6 +43,7 @@ public class ScientistScript : MonoBehaviour
         if (isLooking)
         {
             anim.SetInteger("State", 5);
+            
         }
         else
         {
@@ -49,7 +51,7 @@ public class ScientistScript : MonoBehaviour
         }
     }
 
-     public void Die()
+    public void Die()
     {
         dead = true;
         Destroy(anim);
