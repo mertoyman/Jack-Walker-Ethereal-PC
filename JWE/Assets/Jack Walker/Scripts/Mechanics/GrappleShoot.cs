@@ -6,6 +6,7 @@ public class GrappleShoot : MonoBehaviour
     [SerializeField] VRTK_Pointer pointer = null;
     [SerializeField] VRTK_InteractGrab grab = null;
     [SerializeField] VRTK_ControllerEvents controllerEvents = null;
+    [SerializeField] Gauntlet gauntlet;
     [SerializeField] Transform player = null;
     [SerializeField] FlowManager flowManager;
     [SerializeField] Vector3 initialGrapplePosition = new Vector3(-0.032f, -0.022f, -0.11f);
@@ -21,7 +22,6 @@ public class GrappleShoot : MonoBehaviour
     SlowMotion slowMotion;
     GameObject controller = null;
     LaserBeam laserBeamScript;
-    Gauntlet gauntlet;
     Jump jump = null;
 
     public Vector3 target;
@@ -41,7 +41,6 @@ public class GrappleShoot : MonoBehaviour
         slowMotion = FindObjectOfType<SlowMotion>();
         controller = FindObjectOfType<VRTK_SlideObjectControlAction>().gameObject;
         laserBeamScript = GetComponent<LaserBeam>();
-        gauntlet = GetComponentInChildren<Gauntlet>();
         initialGrapplePosition = new Vector3(-0.032f, -0.022f, -0.175f);
         grappleThrown = true;
     }

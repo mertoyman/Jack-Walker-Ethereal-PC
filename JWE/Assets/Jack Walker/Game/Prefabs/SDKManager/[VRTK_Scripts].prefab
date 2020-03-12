@@ -148,6 +148,7 @@ MonoBehaviour:
   pointer: {fileID: 8564827701101275658}
   grab: {fileID: 8564827701101275657}
   controllerEvents: {fileID: 8564827701101275656}
+  gauntlet: {fileID: 2843508232132952135}
   player: {fileID: 0}
   flowManager: {fileID: 0}
   initialGrapplePosition: {x: -0.032, y: -0.022, z: -0.11}
@@ -421,5 +422,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec704cceb26f6f49b6c900fc83d8d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2843508232132952135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7723630022231759190, guid: ddbc7e04a48c383419b1c4213bf3604f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5501695869696973073}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37238c9798d4cd74c8110ff601b9d4fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

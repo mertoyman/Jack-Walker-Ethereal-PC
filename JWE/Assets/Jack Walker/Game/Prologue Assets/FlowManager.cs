@@ -45,6 +45,7 @@ public class FlowManager : MonoBehaviour
     {
         if (flowPhase == 2 && pointer.isLive)
         {
+            gShoot.enabled = true;
             sword.SetActive(false);
             sword.SetActive(true);
             NextFlowLevel();
