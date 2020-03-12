@@ -8,8 +8,9 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log(other.tag);
             if (animator.GetBool("Open") == false)
             {
                 animator.SetBool("Open", true);
@@ -19,7 +20,7 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             if (animator.GetBool("Open") == true)
             {
