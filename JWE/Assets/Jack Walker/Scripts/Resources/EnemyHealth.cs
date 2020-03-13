@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    [SerializeField] Animator animator = null;
-    [SerializeField] Fighter fighter = null;
-    [SerializeField] AIController npcController = null;
+    Animator animator = null;
+    Fighter fighter = null;
+    AIController npcController = null;
    
     void Start()
     {
